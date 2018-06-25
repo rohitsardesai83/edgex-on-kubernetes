@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-support-notifications
     spec:
       containers:
-      - image: edgexfoundry/docker-support-notifications:0.3
+      - image: edgexfoundry/docker-support-notifications:0.2
         name: edgex-support-notifications
         ports:
         - containerPort: 48060

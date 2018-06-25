@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-export-client
     spec:
       containers:
-      - image: edgexfoundry/docker-export-client:0.3
+      - image: edgexfoundry/docker-export-client:0.2.1
         name: edgex-export-client
         ports:
         - containerPort: 48071

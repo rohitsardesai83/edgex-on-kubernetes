@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-support-scheduler
     spec:
       containers:
-      - image: edgexfoundry/docker-support-scheduler:0.3
+      - image: edgexfoundry/docker-support-scheduler:0.2.1
         name: edgex-support-scheduler
         ports:
         - containerPort: 48085

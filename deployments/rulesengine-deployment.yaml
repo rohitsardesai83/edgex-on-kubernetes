@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-support-rulesengine
     spec:
       containers:
-      - image: edgexfoundry/docker-support-rulesengine:0.3
+      - image: edgexfoundry/docker-support-rulesengine:0.2.1
         name: edgex-support-rulesengine
         ports:
         - containerPort: 48075

@@ -5,7 +5,8 @@ set -e
 EDGEX_ROOT=$(dirname "${BASH_SOURCE}")/..
 
 function create_services {
-    
+
+  kubectl create -f "${EDGEX_ROOT}/services/consul-service.yaml"
   kubectl create -f "${EDGEX_ROOT}/services/mongo-service.yaml"
   kubectl create -f "${EDGEX_ROOT}/services/logging-service.yaml"
   kubectl create -f "${EDGEX_ROOT}/services/notifications-service.yaml"
@@ -19,7 +20,9 @@ function create_services {
 }
 
 function create_deployments {
-    
+
+  kubectl create -f "${EDGEX_ROOT}/deployments/consul-deployment.yaml"
+  sleep 10
   kubectl create -f "${EDGEX_ROOT}/deployments/mongo-deployment.yaml"
   sleep 10
   kubectl create -f "${EDGEX_ROOT}/deployments/logging-deployment.yaml"
