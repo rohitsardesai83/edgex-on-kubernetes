@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-core-command
     spec:
       containers:
-      - image: edgexfoundry/docker-core-command:0.3
+      - image: edgexfoundry/docker-core-command:0.2.1
         name: edgex-core-command
         ports:
         - containerPort: 48082

@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-core-metadata
     spec:
       containers:
-      - image: edgexfoundry/docker-core-metadata:0.3
+      - image: edgexfoundry/docker-core-metadata:0.2.1
         name: edgex-core-metadata
         ports:
         - containerPort: 48081

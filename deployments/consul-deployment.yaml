@@ -2,20 +2,22 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    io.kompose.service: edgex-support-logging
-  name: edgex-support-logging
+    io.kompose.service: edgex-core-consul
+  name: edgex-core-consul
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        io.kompose.service: edgex-support-logging
+        io.kompose.service: edgex-core-consul
     spec:
       containers:
-      - image: edgexfoundry/docker-support-logging:0.2.1
-        name: edgex-support-logging
+      - image: edgexfoundry/docker-core-consul:latest
+        name: edgex-core-consul
         ports:
-        - containerPort: 48061
+        - containerPort: 8400
+        - containerPort: 8500
+        - containerPort: 8600
         resources: {}
         volumeMounts:
         - mountPath: /data/db
@@ -41,4 +43,3 @@ spec:
         hostPath:
           path: /consul/data
 status: {}
-

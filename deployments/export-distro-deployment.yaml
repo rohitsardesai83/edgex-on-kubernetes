@@ -12,7 +12,7 @@ spec:
         io.kompose.service: edgex-export-distro
     spec:
       containers:
-      - image: edgexfoundry/docker-export-distro:0.3
+      - image: edgexfoundry/docker-export-distro:0.2.1
         name: edgex-export-distro
         ports:
         - containerPort: 48070
