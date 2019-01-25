@@ -1,6 +1,7 @@
 ---
 name: Bug Report
-about: Report a bug encountered while operating edgex-on-k8s
+about: Report a bug encountered while operating edgex on k8s
+labels: kind/bug
 
 ---
 
